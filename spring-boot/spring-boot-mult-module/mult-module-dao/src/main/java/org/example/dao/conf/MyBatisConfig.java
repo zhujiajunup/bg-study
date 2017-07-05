@@ -1,5 +1,7 @@
-package org.jjzhu.springboot.config;
+package org.example.dao.conf;
 
+import lombok.Getter;
+import lombok.Setter;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.annotation.MapperScan;
@@ -18,16 +20,17 @@ import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import javax.sql.DataSource;
 
-import static org.jjzhu.springboot.config.MyBatisConfig.SSF_REF;
+import static org.example.dao.conf.MyBatisConfig.SSF_REF;
 
 /**
- * Created by hzzhujiajun on 2017/7/4.
+ * MybatisConfig 配置mybatis
+ * Created by hzzhujiajun on 2017/7/5.
  */
 @Configuration
 @EnableTransactionManagement
-@MapperScan(basePackages = {"org.jjzhu.dao"},
-            sqlSessionFactoryRef = SSF_REF,
-            annotationClass = Repository.class)
+@MapperScan(basePackages = {"org.example.dao"},
+        sqlSessionFactoryRef = SSF_REF,
+        annotationClass = Repository.class)
 public class MyBatisConfig {
     public static final String SSF_REF = "sqlSessionFactory";
     public static final String DATA_SOURCE = "dataSource";
@@ -38,7 +41,7 @@ public class MyBatisConfig {
     @Bean(name = DATA_SOURCE)
     public DataSource createDataSource(){
         return DataSourceBuilder.create(Thread.currentThread().getContextClassLoader())
-                .driverClassName(jdbcConfig.getDriverClass())
+                .driverClassName(jdbcConfig.driverClass)
                 .url(jdbcConfig.url)
                 .username(jdbcConfig.userName)
                 .password(jdbcConfig.password).build();
@@ -49,11 +52,11 @@ public class MyBatisConfig {
         SqlSessionFactoryBean bean = new SqlSessionFactoryBean();
         bean.setDataSource(dataSource);
         /* 设置 mybatis configuration 扫描路径 */
-        bean.setConfigLocation(new ClassPathResource("mybatis/mybatis-config.xml"));
+        bean.setConfigLocation(new ClassPathResource("mybatis-config.xml"));
         try {
             /* 添加 mapper 扫描路径 */
             PathMatchingResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
-            bean.setMapperLocations(resolver.getResources("classpath:/mybatis/mapper/*.xml"));
+            bean.setMapperLocations(resolver.getResources("classpath:/org/example/dao/mapper/*.xml"));
             return bean.getObject();
         } catch (Exception e) {
             e.printStackTrace();
@@ -61,7 +64,8 @@ public class MyBatisConfig {
         }
 
     }
-
+    @Setter
+    @Getter
     @PropertySource(value = "classpath:db.properties")
     @Component
     static class JdbcConfig{
@@ -81,32 +85,5 @@ public class MyBatisConfig {
             return userName;
         }
 
-        public void setUserName(String userName) {
-            this.userName = userName;
-        }
-
-        public String getDriverClass() {
-            return driverClass;
-        }
-
-        public void setDriverClass(String driverClass) {
-            this.driverClass = driverClass;
-        }
-
-        public String getUrl() {
-            return url;
-        }
-
-        public void setUrl(String url) {
-            this.url = url;
-        }
-
-        public String getPassword() {
-            return password;
-        }
-
-        public void setPassword(String password) {
-            this.password = password;
-        }
     }
 }

@@ -8,9 +8,6 @@
     <modules>
         <module>kafka</module>
         <module>spring-boot</module>
-        <module>core</module>
-        <module>web</module>
-        <module>dao2</module>
     </modules>
     <packaging>pom</packaging>
 
