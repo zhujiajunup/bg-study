@@ -8,6 +8,7 @@
     <modules>
         <module>kafka</module>
         <module>spring-boot</module>
+        <module>spring</module>
     </modules>
     <packaging>pom</packaging>
 

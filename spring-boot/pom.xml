@@ -47,18 +47,6 @@
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
         </dependency>
-        <dependency>
-            <groupId>org.jjzhu</groupId>
-            <artifactId>core</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.jjzhu</groupId>
-            <artifactId>core</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.jjzhu</groupId>
-            <artifactId>core</artifactId>
-        </dependency>
     </dependencies>
 
     <build>

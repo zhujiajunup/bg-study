@@ -413,6 +413,7 @@ jbdc.driver=com.mysql.jdbc.Driver
     </typeAliases>
 </configuration>
 ```
+reference: http://www.jianshu.com/p/69b9fbb97574
 ### Application.java
 ```java
 @SpringBootApplication
@@ -612,3 +613,36 @@ run your application and you will see the filter is load.
 
 ![](http://i.imgur.com/xaV28v5.png)
 
+reference: http://www.jianshu.com/p/05c8be17c80a
+
+### spring-boot-application-with-hive-connection-doesnt-start-embedded-tomcat
+一个项目中用到了hive和hadoop,在用spring-boot搭个任务导入平台的时候，启动的时候报错了
+```
+[ERROR]2017-07-05 16:53:03,820,[SpringApplication], Application startup failed
+java.lang.NoSuchMethodError: org.eclipse.jetty.servlet.ServletMapping.setDefault(Z)V
+	at org.springframework.boot.context.embedded.jetty.JettyEmbeddedServletContainerFactory.addDefaultServlet(JettyEmbeddedServletContainerFactory.java:454) ~[spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.context.embedded.jetty.JettyEmbeddedServletContainerFactory.configureWebAppContext(JettyEmbeddedServletContainerFactory.java:359) ~[spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.boot.context.embedded.jetty.JettyEmbeddedServletContainerFactory.getEmbeddedServletContainer(JettyEmbeddedServletContainerFactory.java:174) ~[spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+Wrapped by: org.springframework.context.ApplicationContextException: Unable to start embedded container; nested exception is java.lang.NoSuchMethodError: org.eclipse.jetty.servlet.ServletMapping.setDefault(Z)V
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onRefresh(EmbeddedWebApplicationContext.java:137) ~[spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:537) ~[spring-context-4.3.9.RELEASE.jar:4.3.9.RELEASE]
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122) ~[spring-boot-1.5.4.RELEASE.jar:1.5.4.RELEASE]
+```
+这个是因为hadoop中的servlet-api的版本和spring-boot中的版本冲突了
+hadoop中的是 2.5，而spring-boot中的是3.1，所以在pom.xml加入如下配置
+```xml
+        <dependency>
+            <groupId>org.apache.hadoop</groupId>
+            <artifactId>hadoop-client</artifactId>
+            <version>2.7.3</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>javax.servlet</groupId>
+                    <artifactId>servlet-api</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+```
+reference: https://stackoverflow.com/questions/31942908/spring-boot-application-with-hive-connection-doesnt-start-embedded-tomcat
+
+github: https://github.com/jjzhu-ncu/bg-study/tree/master/spring-boot/spring-boot-mult-module
