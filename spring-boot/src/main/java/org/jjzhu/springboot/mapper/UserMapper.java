@@ -5,11 +5,13 @@ import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
 import org.jjzhu.springboot.entity.User;
+import org.springframework.context.annotation.Configuration;
 
 /**
  * Created by hzzhujiajun on 2017/7/3.
  */
-//@Mapper
+@Mapper
+@Configuration
 public interface UserMapper {
     @Select("select from user where name=#{name}")
     User findByName(@Param("name") String name);
@@ -18,6 +20,6 @@ public interface UserMapper {
     int insert(@Param("name")String name, @Param("age") Integer age);
 */
 
-    @Insert("insert into user(name, age) values (#{user.name}, #{user.age})")
+    @Insert("insert into user(name, password, roles) values (#{user.name}, #{user.password}, #{user.roles})")
     int insert(@Param("user") User user);
 }

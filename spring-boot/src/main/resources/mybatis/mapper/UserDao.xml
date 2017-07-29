@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="org.jjzhu.dao.UserDao">
     <select id="findByName" resultType="User">
-        select id, name, age from user where name = #{name}
+        select id, name, password, roles from user where name = #{name}
     </select>
 
 </mapper>
