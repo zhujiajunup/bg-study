@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration xmlns="http://ch.qos.logback/xml/ns/logback"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="http://ch.qos.logback/xml/ns/logback http://ch.qos.logback/xml/ns/logback/logback.xsd"
+               scan="true" monitorInterval="300" packagingData="true">
+
+    <property resource="common.properties"/>
+
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <target>System.out</target>
+        <encoder>
+            <charset>UTF-8</charset>
+            <pattern>[%-5p]%d,[%c{0}], %m%n%rEx{3}</pattern>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>DEBUG</level>
+        </filter>
+    </appender>
+
+
+    <appender name="HOLMES_APPENDER" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${logback.logDir}/holmes.log</file>
+
+        <encoder>
+            <charset>UTF-8</charset>
+            <pattern>[%-5p]%d,[%c{3}] - %m%n%rEx{3}</pattern>
+        </encoder>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>${logback.logDir}/holmes.%d{yyyy-MM-dd}.log.gz</fileNamePattern>
+        </rollingPolicy>
+    </appender>
+
+
+    <logger name="com.netease.mail" level="DEBUG" additivity="true">
+        <appender-ref ref="HOLMES_APPENDER"/>
+    </logger>
+
+    <root level="DEBUG">
+        <appender-ref ref="CONSOLE"/>
+    </root>
+
+</configuration>
