@@ -2,7 +2,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.netease.mail.holmes.archetypes</groupId>
+    <groupId>com.****.mail.holmes.archetypes</groupId>
     <artifactId>spring-boot-archetype</artifactId>
     <version>1.0</version>
     <parent>
@@ -96,23 +96,23 @@
     <repositories>
         <repository>
             <id>RepoMail</id>
-            <url>http://repo.mail.netease.com/artifactory/simple/repo</url>
+            <url>http://repo.mail.****.com/artifactory/simple/repo</url>
             <layout>default</layout>
         </repository>
     </repositories>
 
     <distributionManagement>
-        <downloadUrl>http://repo.mail.netease.com/artifactory</downloadUrl>
+        <downloadUrl>http://repo.mail.****.com/artifactory</downloadUrl>
         <repository>
             <uniqueVersion>false</uniqueVersion>
             <id>RepoMail</id>
-            <url>http://repo.mail.netease.com/artifactory/libs-release-local</url>
+            <url>http://repo.mail.****.com/artifactory/libs-release-local</url>
             <layout>default</layout>
         </repository>
         <snapshotRepository>
             <uniqueVersion>true</uniqueVersion>
             <id>RepoMail</id>
-            <url>http://repo.mail.netease.com/artifactory/libs-snapshot-local</url>
+            <url>http://repo.mail.****.com/artifactory/libs-snapshot-local</url>
             <layout>default</layout>
         </snapshotRepository>
     </distributionManagement>

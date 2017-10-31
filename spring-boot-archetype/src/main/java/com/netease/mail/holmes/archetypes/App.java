@@ -1,4 +1,4 @@
-package com.netease.mail.holmes.archetypes;
+package com.****.mail.holmes.archetypes;
 
 /**
  * Hello world!

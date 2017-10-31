@@ -1,4 +1,4 @@
-package com.netease.mail.holmes.archetypes;
+package com.****.mail.holmes.archetypes;
 
 import junit.framework.Test;
 import junit.framework.TestCase;

@@ -31,7 +31,7 @@
     </appender>
 
 
-    <logger name="com.netease.mail" level="DEBUG" additivity="true">
+    <logger name="com.****.mail" level="DEBUG" additivity="true">
         <appender-ref ref="HOLMES_APPENDER"/>
     </logger>
 

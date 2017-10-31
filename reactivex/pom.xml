@@ -8,10 +8,10 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>hive</artifactId>
+    <artifactId>reactivex</artifactId>
     <packaging>jar</packaging>
 
-    <name>hive</name>
+    <name>reactivex</name>
     <url>http://maven.apache.org</url>
 
     <properties>
@@ -27,52 +27,33 @@
         <!-- plugins version -->
         <maven-resources-plugin.verison>3.0.2</maven-resources-plugin.verison>
         <maven-compiler-plugin.version>3.5.1</maven-compiler-plugin.version>
-        <hive-exec.version>2.1.0</hive-exec.version>
     </properties>
 
     <dependencies>
-        <!-- https://mvnrepository.com/artifact/org.apache.hive/hive-exec -->
-        <dependency>
-            <groupId>org.apache.hive</groupId>
-            <artifactId>hive-exec</artifactId>
-            <version>2.1.0</version>
 
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/org.apache.hive/hive-common -->
         <dependency>
-            <groupId>org.apache.hive</groupId>
-            <artifactId>hive-common</artifactId>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>${slf4j-api.verison}</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/io.reactivex.rxjava2/rxjava -->
+        <dependency>
+            <groupId>io.reactivex.rxjava2</groupId>
+            <artifactId>rxjava</artifactId>
             <version>2.1.0</version>
         </dependency>
+
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>${junit.version}</version>
             <scope>test</scope>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.apache.hive/hive-cli -->
-        <dependency>
-            <groupId>org.apache.hive</groupId>
-            <artifactId>hive-cli</artifactId>
-            <version>2.1.0</version>
-        </dependency>
-        <dependency>
-            <groupId>com.****.mail.holmes</groupId>
-            <artifactId>alert</artifactId>
-            <version>1.0.0</version>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.slf4j</groupId>
-                    <artifactId>slf4j-api</artifactId>
-                </exclusion>
-            </exclusions>
-        </dependency>
     </dependencies>
 
     <build>
-        <finalName>hive</finalName>
+        <finalName>reactivex</finalName>
         <resources>
-
             <resource>
                 <directory>src/main/java</directory>
                 <includes>
@@ -131,5 +112,4 @@
             <layout>default</layout>
         </snapshotRepository>
     </distributionManagement>
-
 </project>
