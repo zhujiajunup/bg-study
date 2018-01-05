@@ -7,7 +7,7 @@ import org.springframework.web.servlet.ViewResolver;
 import org.springframework.web.servlet.view.ContentNegotiatingViewResolver;
 
 /**
- * Created by hzzhujiajun on 2017/7/4.
+ * Created by zhujiajunup@163.com on 2017/7/4.
  */
 @Configuration
 @ImportResource(locations = {"classpath:application-bean.xml"})

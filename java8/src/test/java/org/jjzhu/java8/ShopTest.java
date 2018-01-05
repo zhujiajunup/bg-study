@@ -14,7 +14,7 @@ import org.jjzhu.java8.beans.Shop;
 import org.jjzhu.java8.stream.BestPriceFinder;
 
 /**
- * @author 祝佳俊(hzzhujiajun@corp.****.com)
+ * @author 祝佳俊(zhujiajunup@163.com)
  */
 public class ShopTest {
     public static void main(String[] args) {

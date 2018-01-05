@@ -12,7 +12,7 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 import org.springframework.security.core.userdetails.UserDetailsService;
 
 /**
- * Created by hzzhujiajun on 2017/7/12.
+ * Created by zhujiajunup@163.com on 2017/7/12.
  */
 @EnableAutoConfiguration
 @EnableWebSecurity

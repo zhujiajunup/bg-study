@@ -8,7 +8,7 @@ import org.springframework.context.annotation.PropertySource;
 import org.springframework.core.env.Environment;
 
 /**
- * Created by hzzhujiajun on 2017/7/6.
+ * Created by zhujiajunup@163.com on 2017/7/6.
  */
 @Configuration
 @PropertySource("classpath:app.properties")

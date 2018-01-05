@@ -7,7 +7,7 @@
 package org.jjzhu.puzzlers;
 
 /**
- * @author 祝佳俊(hzzhujiajun@corp.****.com)
+ * @author 祝佳俊(zhujiajunup@163.com)
  */
 public class InTheLoop {
     public static final int END = Integer.MAX_VALUE;

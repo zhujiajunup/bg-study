@@ -8,7 +8,7 @@ import org.jjzhu.springboot.entity.User;
 import org.springframework.context.annotation.Configuration;
 
 /**
- * Created by hzzhujiajun on 2017/7/3.
+ * Created by zhujiajunup@163.com on 2017/7/3.
  */
 @Mapper
 @Configuration

@@ -5,7 +5,7 @@ import org.example.dao.entity.User;
 import org.springframework.stereotype.Repository;
 
 /**
- * Created by hzzhujiajun on 2017/7/5.
+ * Created by zhujiajunup@163.com on 2017/7/5.
  */
 @Repository
 public interface UserDao {

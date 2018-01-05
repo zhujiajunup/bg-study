@@ -9,7 +9,7 @@ import javax.servlet.ServletResponse;
 import java.io.IOException;
 
 /**
- * Created by hzzhujiajun on 2017/7/5.
+ * Created by zhujiajunup@163.com on 2017/7/5.
  */
 public class MyFilter implements Filter{
     @Override

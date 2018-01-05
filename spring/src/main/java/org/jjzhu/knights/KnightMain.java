@@ -3,7 +3,7 @@ package org.jjzhu.knights;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
- * Created by hzzhujiajun on 2017/7/6.
+ * Created by zhujiajunup@163.com on 2017/7/6.
  */
 public class KnightMain {
     public static void main(String [] args){

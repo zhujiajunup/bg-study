@@ -1,7 +1,7 @@
 package org.jjzhu.spring.soundsystem;
 
 /**
- * Created by hzzhujiajun on 2017/7/6.
+ * Created by zhujiajunup@163.com on 2017/7/6.
  */
 public interface MediaPlayer {
 

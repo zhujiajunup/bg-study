@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.RestController;
 /*
 *
- * Created by hzzhujiajun on 2017/7/4.
+ * Created by zhujiajunup@163.com on 2017/7/4.
  */
 
 @RestController

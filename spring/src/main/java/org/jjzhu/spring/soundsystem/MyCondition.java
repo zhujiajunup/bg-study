@@ -6,7 +6,7 @@ import org.springframework.context.annotation.ConditionContext;
 import org.springframework.core.type.AnnotatedTypeMetadata;
 
 /**
- * Created by hzzhujiajun on 2017/7/7.
+ * Created by zhujiajunup@163.com on 2017/7/7.
  */
 public class MyCondition implements Condition {
     @Override

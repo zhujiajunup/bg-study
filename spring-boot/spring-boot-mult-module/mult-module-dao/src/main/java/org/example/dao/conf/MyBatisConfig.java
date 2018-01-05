@@ -24,7 +24,7 @@ import static org.example.dao.conf.MyBatisConfig.SSF_REF;
 
 /**
  * MybatisConfig 配置mybatis
- * Created by hzzhujiajun on 2017/7/5.
+ * Created by zhujiajunup@163.com on 2017/7/5.
  */
 @Configuration
 @EnableTransactionManagement

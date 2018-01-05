@@ -16,6 +16,7 @@
         <module>reactivex</module>
         <module>calcite</module>
         <module>java8</module>
+        <module>springcloud</module>
     </modules>
     <packaging>pom</packaging>
 

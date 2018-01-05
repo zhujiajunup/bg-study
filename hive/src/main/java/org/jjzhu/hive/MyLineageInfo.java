@@ -31,7 +31,7 @@ import org.apache.hadoop.hive.ql.parse.SemanticException;
 import org.jjzhu.hive.util.HiveParserUtil;
 
 /**
- * @author 祝佳俊(hzzhujiajun@corp.****.com)
+ * @author 祝佳俊(zhujiajunup@163.com)
  */
 public class MyLineageInfo implements NodeProcessor {
     /**
@@ -141,7 +141,7 @@ public class MyLineageInfo implements NodeProcessor {
 
     public static void main(String[] args) throws IOException, ParseException,
             SemanticException {
-//        String query = "INSERT OVERWRITE TABLE hzzhujiajun.table1 SELECT a.name FROM hzzhujiajun.table2 a join hzzhujiajun.table3 b ON (a.id = b.id)";
+//        String query = "INSERT OVERWRITE TABLE zhujiajunup@163.com.table1 SELECT a.name FROM zhujiajunup@163.com.table2 a join zhujiajunup@163.com.table3 b ON (a.id = b.id)";
 //        String query2 = "CREATE EXTERNAL TABLE facts.http_status (\n" +
 //                "  code INT,\n" +
 //                "  status_group STRING,\n" +

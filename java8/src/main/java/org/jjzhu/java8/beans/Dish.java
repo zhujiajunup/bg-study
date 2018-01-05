@@ -11,7 +11,7 @@ import lombok.Getter;
 import lombok.ToString;
 
 /**
- * @author 祝佳俊(hzzhujiajun@corp.****.com)
+ * @author 祝佳俊(zhujiajunup@163.com)
  */
 @Getter
 @AllArgsConstructor

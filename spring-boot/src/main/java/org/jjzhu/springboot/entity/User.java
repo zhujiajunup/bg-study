@@ -1,7 +1,7 @@
 package org.jjzhu.springboot.entity;
 
 /**
- * Created by hzzhujiajun on 2017/7/3.
+ * Created by zhujiajunup@163.com on 2017/7/3.
  */
 public class User {
     public static String DEFAULT_ROLE = "USER";

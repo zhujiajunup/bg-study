@@ -21,7 +21,7 @@ import javax.sql.DataSource;
 import static org.jjzhu.springboot.config.MyBatisConfig.SSF_REF;
 
 /**
- * Created by hzzhujiajun on 2017/7/4.
+ * Created by zhujiajunup@163.com on 2017/7/4.
  */
 @Configuration
 @EnableTransactionManagement

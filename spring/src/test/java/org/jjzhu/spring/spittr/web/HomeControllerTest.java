@@ -8,7 +8,7 @@ import static org.springframework.test.web.servlet.setup.MockMvcBuilders.*;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 /**
- * Created by hzzhujiajun on 2017/7/11.
+ * Created by zhujiajunup@163.com on 2017/7/11.
  */
 public class HomeControllerTest {
     @Test

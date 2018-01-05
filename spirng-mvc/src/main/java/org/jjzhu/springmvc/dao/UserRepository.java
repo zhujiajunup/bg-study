@@ -5,7 +5,7 @@ import org.springframework.data.repository.CrudRepository;
 import org.springframework.data.repository.core.CrudMethods;
 
 /**
- * Created by hzzhujiajun on 2017/7/12.
+ * Created by zhujiajunup@163.com on 2017/7/12.
  */
 public interface UserRepository extends CrudRepository<User, Long> {
 }

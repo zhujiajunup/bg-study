@@ -9,7 +9,7 @@ package org.jjzhu.calcite;
 import java.util.Random;
 
 /**
- * @author 祝佳俊(hzzhujiajun@corp.****.com)
+ * @author 祝佳俊(zhujiajunup@163.com)
  */
 public class DataFactory {
     private Random random;

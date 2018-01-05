@@ -1,7 +1,7 @@
 package org.jjzhu.knights;
 
 /**
- * Created by hzzhujiajun on 2017/7/6.
+ * Created by zhujiajunup@163.com on 2017/7/6.
  */
 public class BraveKnight implements Knight {
     private Quest quest;

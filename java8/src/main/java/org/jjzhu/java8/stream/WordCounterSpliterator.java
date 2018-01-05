@@ -10,7 +10,7 @@ import java.util.Spliterator;
 import java.util.function.Consumer;
 
 /**
- * @author 祝佳俊(hzzhujiajun@corp.****.com)
+ * @author 祝佳俊(zhujiajunup@163.com)
  */
 public class WordCounterSpliterator implements Spliterator<Character> {
     private final String string;

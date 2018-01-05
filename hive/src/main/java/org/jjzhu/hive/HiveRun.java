@@ -9,7 +9,7 @@ package org.jjzhu.hive;
 import org.apache.hadoop.hive.cli.CliDriver;
 
 /**
- * @author 祝佳俊(hzzhujiajun@corp.****.com)
+ * @author 祝佳俊(zhujiajunup@163.com)
  */
 public class HiveRun {
     public static void main(String[] args) throws Exception {

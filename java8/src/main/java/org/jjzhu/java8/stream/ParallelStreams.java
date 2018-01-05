@@ -14,7 +14,7 @@ import java.util.stream.Stream;
 import org.jjzhu.java8.utils.StreamsUtils;
 
 /**
- * @author 祝佳俊(hzzhujiajun@corp.****.com)
+ * @author 祝佳俊(zhujiajunup@163.com)
  */
 public class ParallelStreams {
     public static long sequentialSum(long n){

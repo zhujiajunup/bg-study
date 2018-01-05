@@ -15,7 +15,7 @@ import org.jjzhu.java8.beans.Shop;
 import static java.util.stream.Collectors.toList;
 
 /**
- * @author 祝佳俊(hzzhujiajun@corp.****.com)
+ * @author 祝佳俊(zhujiajunup@163.com)
  */
 public class BestPriceFinder {
     private List<Shop> shops = Arrays.asList(new Shop("BestPrice"),

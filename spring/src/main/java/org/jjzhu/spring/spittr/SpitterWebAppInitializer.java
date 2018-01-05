@@ -5,7 +5,7 @@ import org.jjzhu.spring.spittr.config.WebConfig;
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 /**
- * Created by hzzhujiajun on 2017/7/11.
+ * Created by zhujiajunup@163.com on 2017/7/11.
  */
 public class SpitterWebAppInitializer extends AbstractAnnotationConfigDispatcherServletInitializer{
 

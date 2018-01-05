@@ -6,7 +6,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 /**
- * Created by hzzhujiajun on 2017/7/4.
+ * Created by zhujiajunup@163.com on 2017/7/4.
  */
 @Service
 public class UserService {

@@ -9,7 +9,7 @@ package org.jjzhu.java8.stream;
 import java.util.concurrent.RecursiveTask;
 
 /**
- * @author 祝佳俊(hzzhujiajun@corp.****.com)
+ * @author 祝佳俊(zhujiajunup@163.com)
  */
 public class ForkJoinSumCalculator extends RecursiveTask<Long> {
     private final long[] numbers;

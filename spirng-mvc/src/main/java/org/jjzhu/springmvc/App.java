@@ -3,7 +3,7 @@ package org.jjzhu.springmvc;
 import org.omg.Messaging.SYNC_WITH_TRANSPORT;
 
 /**
- * Created by hzzhujiajun on 2017/7/13.
+ * Created by zhujiajunup@163.com on 2017/7/13.
  */
 public class App {
     enum UserRole{

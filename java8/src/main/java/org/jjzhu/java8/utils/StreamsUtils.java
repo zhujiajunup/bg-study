@@ -9,7 +9,7 @@ package org.jjzhu.java8.utils;
 import java.util.function.Function;
 
 /**
- * @author 祝佳俊(hzzhujiajun@corp.****.com)
+ * @author 祝佳俊(zhujiajunup@163.com)
  */
 public class StreamsUtils {
 

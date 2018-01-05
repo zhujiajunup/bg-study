@@ -16,7 +16,7 @@ public class App {
         alertBean.setSubject("test");
         alertBean.setBody("test");
         alertBean.setMobile("13486178520");
-        alertBean.setAccount("hzzhujiajun@corp.****.com");
+        alertBean.setAccount("zhujiajunup@163.com");
         alertBean.setType(AlertType.SEND_BY_POPO + AlertType.SEND_BY_EMAIL + AlertType.SEND_BY_MOBILE + AlertType.SEND_BY_YIXIN);
         try {
             System.out.println(AlertService.sendAlert(alertBean));

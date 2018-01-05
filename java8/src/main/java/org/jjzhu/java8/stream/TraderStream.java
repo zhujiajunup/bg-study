@@ -15,7 +15,7 @@ import org.jjzhu.java8.beans.Trader;
 import org.jjzhu.java8.beans.Transaction;
 
 /**
- * @author 祝佳俊(hzzhujiajun@corp.****.com)
+ * @author 祝佳俊(zhujiajunup@163.com)
  */
 public class TraderStream {
     private Trader raoul = new Trader("Raoul", "Cambridge");

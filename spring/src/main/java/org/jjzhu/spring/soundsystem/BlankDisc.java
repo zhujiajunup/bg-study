@@ -3,7 +3,7 @@ package org.jjzhu.spring.soundsystem;
 import java.util.List;
 
 /**
- * Created by hzzhujiajun on 2017/7/6.
+ * Created by zhujiajunup@163.com on 2017/7/6.
  */
 public class BlankDisc implements CompactDisc {
     private String title;

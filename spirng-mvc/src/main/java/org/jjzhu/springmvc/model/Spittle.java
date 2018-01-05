@@ -6,7 +6,7 @@ import org.apache.commons.lang.builder.HashCodeBuilder;
 import java.util.Date;
 
 /**
- * Created by hzzhujiajun on 2017/7/11.
+ * Created by zhujiajunup@163.com on 2017/7/11.
  */
 public class Spittle {
 
